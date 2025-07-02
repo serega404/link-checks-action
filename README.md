@@ -4,4 +4,5 @@ The script searches for all the links in the file and sends requests to them. If
 
 ### References
 
-https://github.com/adriancoman/link-checks-action
+* https://github.com/adriancoman/link-checks-action
+* https://github.com/jacobtomlinson/python-container-action

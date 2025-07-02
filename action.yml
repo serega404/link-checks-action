@@ -1,0 +1,22 @@
+name: Links check action
+description: A simple action that checks the availability of links in a file.
+author: Sergey Karmanov
+
+branding:
+  icon: 'link'
+  color: 'white'
+
+inputs:
+  filePath:
+    required: true
+    default: "."
+  ignoreCodes:
+    description: "Comma-separated list of HTTP status codes to ignore (e.g., '404,500')."
+    default: ""
+  ignoreSites:
+    description: "Comma-separated list of sites to ignore (e.g., 'https://example.com,http://test.com')."
+    default: ""
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
