@@ -16,6 +16,8 @@ inputs:
   ignoreSites:
     description: "Comma-separated list of sites to ignore (e.g., 'https://example.com,http://test.com')."
     default: ""
+  userAgent:
+    description: "User-Agent string to use for requests"
 
 runs:
   using: "docker"
